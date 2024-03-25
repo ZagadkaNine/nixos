@@ -1,0 +1,95 @@
+###############################################################################
+# Workspace Names
+# These are the labels which define each i3 workspace.
+###############################################################################
+
+
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws0
+
+## Session // Exit App // <><Shift> c ##
+bindsym $mod+Shift+c [con_id="__focused__"] kill
+
+## Session // Logout // <><Shift> q ##
+bindsym $mod+Shift+q exec i3-msg exit 
+
+## Session // Restart // <><Shift> r ##
+bindsym $mod+Shift+r restart
+
+## Launch // Terminal // <> Enter ##
+bindsym $mod+Return exec --no-startup-id alacritty 
+
+## Launch // Browser // <><Shift> Enter ##
+bindsym $mod+b exec --no-startup-id brave 
+
+## Launch // File Manager // <><Shift> f ##
+bindsym $mod+f exec --no-startup-id alacritty -e ~/.local/bin/lfub 
+
+## session // lock screen // <><shift> s ##
+# bindsym $mod+Shift+s exec dm-tool lock
+# bindsym $mod+s exec gnome-screensaver-command -l 
+bindsym $mod+s xfce4-screensaver-command --lock
+
+## session // Launch password // <><shift> p ##
+bindsym $mod+p exec --no-startup-id ~/.local/bin/rofi-pass 
+
+## Split vertically/horizontally // <><shift> v ##
+bindsym $mod+v split v 
+bindsym $mod+Shift+v split h 
+
+
+## session // Launch programs // <><shift> Enter ##
+# bindsym $mod+Shift+Return exec --no-startup-id rofi -show drun -display-drun \"Run: \" -drun-display-format \"{name}\" 
+bindsym $mod+Shift+Return exec --no-startup-id ~/.config/rofi/scripts/rofi_launcher
+
+## Launch // Keybinding Viewer // <><Shift> ? ##
+# bindsym $mod+? exec --no-startup-id ilia -p keybindings -a -t $ilia.stylesheet
+
+## Navigate // Relative Window // <> k j h l ##
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# Toggle bar visibility
+## Modify // Toggle Bar // <> i ##
+bindsym $mod+i bar mode toggle
+
+## Modify // Containing Workspace // <><Ctrl><Shift> k j h l ##
+bindsym $mod+Ctrl+Shift+h move workspace to output left
+bindsym $mod+Ctrl+Shift+j move workspace to output down
+bindsym $mod+Ctrl+Shift+k move workspace to output up
+bindsym $mod+Ctrl+Shift+l move workspace to output right
+
+## Modify // Window Position // <><Shift> k j h l ##
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+## Modify // Window Fullscreen Toggle // <> f ##
+bindsym $mod+t fullscreen toggle
+
+## Modify // Window Floating Toggle // <><Shift> f ##
+bindsym $mod+Shift+t floating toggle
+
+## Modify // Move Window to Workspace 1 - 10 // <><Shift> 0..9 ##
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+

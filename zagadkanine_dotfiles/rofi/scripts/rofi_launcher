@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+DIR="$HOME/.config/rofi"
+RASI="$DIR/launcher.rasi"
+
+# Run
+rofi -show drun -display-drun "Run: " -drun-display-format "{name}" -theme ${RASI}
