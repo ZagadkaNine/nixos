@@ -42,7 +42,22 @@
   ];
 
   xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ 
+      pkgs.xdg-desktop-portal-hyprland 
+    ];
+
+    wlr = {
+      enable = true;
+      settings = {
+        screencast = {
+          chooser_type = "simple";
+          chooser_cmd = "${pkgs.slurp}/bin/slurp -f %o -ro";
+        };
+      };
+    };
+  };
 
   services.xserver.xkb = { 
     layout = "us"; 
