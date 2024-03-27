@@ -33,8 +33,6 @@
     swaybg
     sddm-chili-theme
     libsForQt5.qt5.qtgraphicaleffects
-    xdg-desktop-portal-hyprland
-    xdg-desktop-portal
     gnome.gvfs
     gnome.nautilus
     wl-clipboard
@@ -45,6 +43,7 @@
     enable = true;
     extraPortals = [ 
       pkgs.xdg-desktop-portal-hyprland 
+      pkgs.xdg-desktop-portal 
     ];
 
     wlr = {
