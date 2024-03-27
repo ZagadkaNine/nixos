@@ -34,9 +34,11 @@
     sddm-chili-theme
     libsForQt5.qt5.qtgraphicaleffects
     xdg-desktop-portal-hyprland
+    xdg-desktop-portal
     gnome.gvfs
     gnome.nautilus
     wl-clipboard
+
   ];
 
   xdg.portal.enable = true;

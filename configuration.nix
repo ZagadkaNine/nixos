@@ -105,6 +105,8 @@ in
     pciutils 
     gvfs
     brightnessctl
+    lm_sensors
+    sysstat
     # Languages & Development
     nodejs
     python3

@@ -33,6 +33,8 @@
         pkgs.spotify
         pkgs.kubectl
         pkgs.postman
+        pkgs.xdg-desktop-portal-hyprland
+        pkgs.xdg-desktop-portal
       ];
 
       home.file = {

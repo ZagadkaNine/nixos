@@ -9,8 +9,7 @@
     ./configuration.nix
     ./zagadkanine.nix 
     ./modules/nixos/hyprland.nix
-    #./modules/nixos/i3_gnome.nix
-    #./modules/nixos/x11_gnome.nix
+    ./modules/nixos/postgres.nix
   ];
 
   # Bootloader.
