@@ -24,7 +24,7 @@
     // Modules Left
     "modules-left": [
         "hyprland/workspaces",
-        "hyprland/window",
+        //"hyprland/window",
         "custom/empty"
     ],
 
@@ -34,6 +34,9 @@
 
     // Modules Right    
     "modules-right": [
+				"custom/btc",
+				"custom/shib",
+				"custom/dym",
         "pulseaudio",
         "bluetooth",
         "battery", 
@@ -41,5 +44,4 @@
         "custom/lock",
         "custom/exit",
         "clock"
-    ]
-}
+    ] }

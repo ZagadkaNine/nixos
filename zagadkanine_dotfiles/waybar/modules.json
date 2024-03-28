@@ -189,12 +189,6 @@
         "tooltip": false
     },
 
-    // Power Menu
-    "custom/exit": {
-        "format": "",
-        "on-click": "wlogout",
-        "tooltip": false
-    },
 
     // Lock 
     "lock": {
@@ -372,15 +366,24 @@
         "tooltip": false
     },
 
-
-    // Idle Inhibator
-    "idle_inhibitor": {
-        "format": "{icon}",
+    "custom/btc": {
+        "format": "{} BTC/EUR",
         "tooltip": true,
-        "format-icons":{
-            "activated": "",
-            "deactivated": ""
-        },
-        "on-click-right": "hyprlock"        
-    }
+        "interval": 30,
+        "exec": "./btc.sh",
+    },
+    "custom/shib": {
+        "format": "{} SHIB/EUR",
+        "tooltip": true,
+        "interval": 30,
+        "exec": "./shib.sh",
+    },
+    "custom/dym": {
+        "format": "{} DYM/EUR",
+        "tooltip": true,
+        "interval": 30,
+        "exec": "./dym.sh",
+    },
+
 }
+

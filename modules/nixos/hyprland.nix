@@ -30,13 +30,14 @@
     waybar
     hyprland-protocols
     hyprlock
+    hypridle
     swaybg
     sddm-chili-theme
     libsForQt5.qt5.qtgraphicaleffects
     gnome.gvfs
     gnome.nautilus
     wl-clipboard
-
+    wlogout
   ];
 
   xdg.portal = {

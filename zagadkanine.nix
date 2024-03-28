@@ -8,7 +8,7 @@
   users.users.zagadkanine = {
     isNormalUser = true;
     description = "ZagadkaNine";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "audio" ];
     shell = pkgs.zsh;
   };
 
@@ -41,6 +41,7 @@
         ".config/alacritty".source = zagadkanine_dotfiles/alacritty;
         ".config/starship.toml".source = zagadkanine_dotfiles/starship.toml;
         ".config/hypr".source = zagadkanine_dotfiles/hypr;
+        ".config/wlogout".source = zagadkanine_dotfiles/wlogout;
         ".config/waybar".source = zagadkanine_dotfiles/waybar;
         ".wallpapers".source = zagadkanine_dotfiles/wallpapers;
       };
